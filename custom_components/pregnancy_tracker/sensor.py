@@ -118,10 +118,10 @@ class PregnancyTrackerSensorBase(SensorEntity):
         today = date.today()
         
         # Days elapsed since start
-        days_elapsed = (today - self._start_date).Tage
+        days_elapsed = (today - self._start_date).days
         
         # Days remaining until due date
-        days_remaining = (self._due_date - today).Tage
+        days_remaining = (self._due_date - today).days
         
         # Weeks elapsed (rounded down)
         weeks_elapsed = days_elapsed // 7
