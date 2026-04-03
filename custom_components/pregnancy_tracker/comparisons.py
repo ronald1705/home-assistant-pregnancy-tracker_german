@@ -52,6 +52,7 @@ COMPARISONS = {
     42: {"veggie": "Wassermelone", "dad": "Papas Autoreifen"},
 }
 
+
 def _image_path(mode: str, week: int) -> str:
     """Build an image path for a given mode/week.
 
@@ -107,6 +108,7 @@ WEEKLY_SUMMARIES = {
     41: "Das Warten geht weiter. Das Baby nimmt weiter an Gewicht zu.",
     42: "Überfällig – der Arzt könnte eine Einleitung empfehlen.",
 }
+
 
 def get_comparison(week: int, mode: str = "veggie") -> dict[str, str]:
     """Get size comparison data for a given week.
@@ -195,7 +197,13 @@ BIBLE_VERSES = {
     34: {"text": "Kraft und Würde sind ihr Gewand, und sie lacht über die kommende Zeit.", "reference": "Sprüche 31,25"},
     35: {"text": "Der HERR selbst zieht vor dir her; er ist mit dir, er wird dich nicht aufgeben noch dich verlassen.", "reference": "5. Mose 31,8"},
     36: {"text": "Er schenke dir, was dein Herz begehrt, und lasse all deine Pläne gelingen.", "reference": "Psalm 20,5"},
-    37: {"text": "Sorgt euch also nicht um den morgigen Tag; denn der morgige Tag wird für sich selbst so
+    37: {"text": "Sorgt euch also nicht um den morgigen Tag; denn der morgige Tag wird für sich selbst sorgen.", "reference": "Matthäus 6,34"},
+    38: {"text": "Lasst uns im Tun des Guten nicht müde werden; denn zu seiner Zeit werden wir ernten, wenn wir nicht aufgeben.", "reference": "Galater 6,9"},
+    39: {"text": "Harre des HERRN; sei stark, und dein Herz fasse Mut, und harre des HERRN!", "reference": "Psalm 27,14"},
+    40: {"text": "Denn bei Gott ist kein Ding unmöglich.", "reference": "Lukas 1,37"},
+    41: {"text": "Der HERR ist gut, eine Zuflucht am Tag der Not; er kennt die, die auf ihn vertrauen.", "reference": "Nahum 1,7"},
+    42: {"text": "Der Gott aller Gnade, der euch zu seiner ewigen Herrlichkeit in Christus berufen hat, wird euch stärken, festigen und aufrichten.", "reference": "1. Petrus 5,10"},
+}
 
 
 def get_bible_verse(week: int, custom_path: str | None = None) -> dict[str, str]:
